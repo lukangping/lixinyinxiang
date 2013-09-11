@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+<meta name="description" content="黎昕印象（西安）婚庆设计公司">
+<meta name="keywords" content="婚庆 设计 西安 黎昕">
+  <title>黎昕印象</title>
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="slide.css" />
+  <script type="text/javascript" src="jquery.min.js"></script>
+</head>
+<body>
+	<div id="header">
+		<div id="logo"></div>
+		<ul class="nav">
+			<li href="index.html"><span>home</span><strong>首页</strong></li>
+			<li href="about.html" class="phover"><span>about</span><strong>关于</strong></li>
+			<li href="video.html"><span>video</span><strong>影像</strong></li>
+			<li href="wedding.html"><span>wedding</span><strong>婚礼现场</strong></li>
+			<li href="events.html"><span>events</span><strong>活动展示</strong></li>
+			<li href="contact.html"><span>contact</span><strong>联系我们</strong></li>
+		</ul>
+	</div>
+	<div id="maskLayer">
+	</div>
+	<div id="menuline"></div>
+	<div id="aboutContent">
+	</div>
+	
+		<div id="aboutText">
+			首席舞台创意设计师<br>带给你最震撼的舞台设计效果，不管是色彩的搭配，还是风格的转换，总能带给你惊喜匠心独运。<p>
+			首席婚礼策划师 <br>尊重您的内心感受，通过与您的交流，为您策划一场最独特，最无忧无虑，最适合您的婚礼，小细节中又处处有惊喜。<p>
+			首席微电影导演 <br>曾多次跟随吴宇森导演拍戏，视角独特，经验丰富，拍摄的画面浪漫唯美，让您的爱情故事插上艺术的翅膀，重现大屏幕，您也可以成为最佳男（女）主角。<p>
+			金牌编剧<br> 让您的LOVE STORY 跃然纸上，不仅有偶像剧的浪漫气质，更延续了温暖，真实，感动。<p>
+			王牌后期制作<br> 明快的节奏，干净的画面，处处流露着清新，唯美，真实。不管是属于您的LOVE STORY，还是您的婚礼全程，祝福短片，都带给您前所未有的惊喜，值得您珍藏一生<p>
+		</div>
+
+	<div id="footer">
+		<div id="service" class="end">Service:<br>
+			<a href="http://weibo.com/u/3571715382" target="_blank"><img src="images/weibo.png"></a>
+			<a href="http://wpa.qq.com/msgrd?v=3&uin=113001639&site=qq&menu=yes" target="_blank"><img src="images/qq.jpeg"></a>
+		</div>
+		<div id="contact" class="end">Contact:<br><br>
+			TEL: 029-89153573  15802958276<br>
+			ADDRESS: 西安凤城一路富苑阳光小区4号楼902 黎昕印象工作室<br>
+			EMAIL: 113001639@qq.com
+		</div>
+		<div id="copyright" class="end">Copyright:<br><br>
+				PRIVACY<br>
+				COPYRIGHT<br>
+				RONGDA TECH CO., LTD.版权所有©2013<br>
+				
+		</div>
+	</div>
+
+<script>
+
+function setMenuLine(){
+	var nl = $(".nav .phover").offset().left;
+	$("#menuline").css({"left":nl});
+}
+
+$('.nav li').mouseover(
+	function(){
+		$('.phover').removeClass('phover');
+		$(this).addClass('phover');
+		setMenuLine();
+	}
+)
+$('.nav li').mouseout(
+	function(){
+		$(this).removeClass('phover');
+	}
+)
+$('.nav li').click(
+	function(){
+		window.location.href =$(this).attr("href");
+	}
+)
+
+$(document).ready(function(){
+	setMenuLine();
+	
+    $('#rotator > a.arrow.left').click(function(e){
+       e.preventDefault;
+       var rotator = $('#rotator .images');
+       rotator.children('.imageHolder').first().animate({marginLeft:"-=310px"}, function(){
+          $(this).appendTo(rotator).removeAttr("style");
+       });
+    });
+    $('#rotator > a.arrow.right').click(function(e){
+       e.preventDefault;
+       var rotator = $('#rotator .images');
+      rotator.children('.imageHolder').last().prependTo(rotator).removeAttr("style").css("margin-left", "-310px").animate({marginLeft:"0"});
+    });
+});
+</script>
+
+</script>
+</body>
+
+</html>

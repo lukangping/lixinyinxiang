@@ -1,0 +1,227 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	overflow-x: hidden;
+	background: rgb(250, 251, 251);
+}
+
+#header {
+	height: 110px;
+	width: 100%;
+	margin: 0 auto;
+	position: absolute;
+	top: 20px;
+	z-index: 101;
+}
+
+#maskLayer {
+	height: 114px;
+	width: 100%;
+	margin: 0 auto;
+	position: absolute;
+	top: 20px;
+	background: url(images/menu.png);
+	z-index: 100;
+	opacity: 0.8;
+}
+
+#menuline {
+	position: absolute;
+	background: url(images/menuline.gif);
+	z-index: 1400;
+	top: 25px;
+	left: -22px;
+	height: 106px;
+	width: 10px;
+}
+
+#logo {
+	height: 100%;
+	width: 250px;
+	background-image: url(images/logo.png);
+	background-size: 440px 370px;
+	background-repeat: no-repeat;
+	background-position: -220px 17px;
+	float: left;
+	margin: 0 50px 0 220px;
+}
+
+.nav {
+	height: 100%;
+	float: right;
+	margin: 0px 250px 0 50px;
+	padding: 0px;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-family: Arial, Helvetica, sans-serif;
+	color: rgb(66, 3, 23);
+}
+
+.nav li {
+	list-style: none;
+	float: left;
+	height: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
+	position: relative;
+}
+
+.nav li span {
+	position: relative;
+	bottom: -79px;
+}
+
+.nav li strong {
+	top: 51px;
+	position: absolute;
+	left: 16px;
+/*	opacity: 0;*/
+}
+
+.active{
+/*	color: rgb(207, 4, 4);*/
+}
+
+#content {
+	width: 100%;
+/*	border: 1px solid;*/
+	top: 131px;
+	position: relative;
+}
+
+#contactContent {
+	background-image: url(images/about_background.jpg);
+	opacity: 0.4;
+	background-position: 23% 1%;
+	background-repeat: no-repeat no-repeat;
+	width: 100%;
+	overflow: hidden;
+	min-height: 623px;
+	background-size: 110% 140%;
+}
+
+#aboutContent {
+	background-image: url(images/contact_background.png);
+	opacity: 0.9;
+	background-position: 22% 90%;
+	background-repeat: no-repeat no-repeat;
+	width: 100%;
+	overflow: hidden;
+	min-height: 623px;
+	background-size: 35% 73%;
+}
+
+#aboutText {
+	position: absolute;
+	top: 220px;
+	left: 700px;
+	z-index: 1000;
+	height: 500px;
+	width: 487px;
+	-webkit-border-radius: 3px 3px 0 0;
+	border-radius: 3px;
+	font-family: 'Telex',sans-serif;
+	font-size: 13px;
+}
+
+#contactText {
+	position: absolute;
+	top: 270px;
+	left: 250px;
+	z-index: 1000;
+	height: 500px;
+	width: 400px;
+	-webkit-border-radius: 3px 3px 0 0;
+	border-radius: 3px;
+	font-family: 'Telex',sans-serif;
+}
+
+#contactNo {
+	position: absolute;
+	top: 200px;
+	right:60px;
+	width:300px;
+}
+
+#contactNo span {
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+	font-family: Verdana, Geneva, sans-serif;
+	margin: 0 0 0 15px;
+}
+
+#contactNo img{
+	height: 70px;
+	width: 250px;
+}
+
+
+#content {
+	background-image: url(images/pin_background.jpg);
+	opacity: 1;
+	background-position: 50% 0%;
+	background-repeat: no-repeat no-repeat;
+	width: 100%;
+	overflow: hidden;
+	min-height: 623px;
+	background-size: 100% 100%;
+}
+
+#imageWrapper {
+	background-image: url(images/background.jpg);
+	opacity: 1;
+	background-position: 50% 0%;
+	background-repeat: no-repeat no-repeat;
+	width: 100%;
+	overflow: hidden;
+	height: 623px;
+}
+
+#footer {
+	padding: 20px 0px 0px 350px;
+	background: #eaeaea;
+	height: 100px;
+	font-family: Verdana, Geneva, sans-serif;
+	color: rgb(165, 162, 162);;
+	font-size:13px;
+	line-height:12px;
+	font-weight:normal;
+}
+
+#footer img {
+	padding: 20px 5px 0px 0px;
+	height: 30px;
+	width: 30px;
+}
+
+#footer .end{
+	height: 80px;
+	float: left;
+	line-height: 14px;
+}
+
+#contact {
+	width: 400px;
+	border-right: 1px white solid;
+	margin: 0 20px 0 0;
+}
+
+#service {
+	width: 100px;
+	border-right: 1px white solid;
+	margin: 0 20px 0 0;
+}
+
+#copyright {
+	width: 300px;
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>黎昕印象</title>
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="pin.css" />
+</head>
+<body>
+	<div id="header">
+		<div id="logo"></div>
+		<ul class="nav">
+			<li href="index.html"><span>home</span><strong>首页</strong></li>
+			<li href="about.html"><span>about</span><strong>关于</strong></li>
+			<li href="video.html"  class="phover"><span>video</span><strong>影像</strong></li>
+			<li href="wedding.html"><span>wedding</span><strong>婚礼现场</strong></li>
+			<li href="events.html"><span>events</span><strong>活动展示</strong></li>
+			<li href="contact.html"><span>contact</span><strong>联系我们</strong></li>
+		</ul>
+	</div>
+	<div id="maskLayer">
+	</div>
+	<div id="menuline"></div>
+	<div id="content" >
+		<div class="container">
+		    <div class="item" data-number="1"><div class="pinWrapper"><div class="pinHolder"><a href="/abc" class="pinImageWrapper"><img src="images/video/1.jpg" class="pinImage"></a></div></div></div>
+			<div class="item" data-number="2"><div class="pinWrapper"><div class="pinHolder"><a href="/abc" class="pinImageWrapper"><img src="images/video/2.jpg" class="pinImage"></a></div></div></div>
+			<div class="item" data-number="3"><div class="pinWrapper"><div class="pinHolder"><a href="/abc" class="pinImageWrapper"><img src="images/video/3.jpg" class="pinImage"></a></div></div></div>
+			<div class="item" data-number="4"><div class="pinWrapper"><div class="pinHolder"><a href="/abc" class="pinImageWrapper"><img src="images/video/4.jpg" class="pinImage"></a></div></div></div>
+			<div class="item" data-number="5"><div class="pinWrapper"><div class="pinHolder"><a href="/abc" class="pinImageWrapper"><img src="images/video/5.jpg" class="pinImage"></a></div></div></div>
+			<div class="item" data-number="6"><div class="pinWrapper"><div class="pinHolder"><a href="/abc" class="pinImageWrapper"><img src="images/video/6.jpg" class="pinImage"></a></div></div></div>
+			<div class="item" data-number="7"><div class="pinWrapper"><div class="pinHolder"><a href="/abc" class="pinImageWrapper"><img src="images/video/7.jpg" class="pinImage"></a></div></div></div>
+			<div class="item" data-number="8"><div class="pinWrapper"><div class="pinHolder"><a href="/abc" class="pinImageWrapper"><img src="images/video/8.jpg" class="pinImage"></a></div></div></div>
+			<div class="item" data-number="9"><div class="pinWrapper"><div class="pinHolder"><a href="/abc" class="pinImageWrapper"><img src="images/video/9.jpg" class="pinImage"></a></div></div></div>
+			<div class="item" data-number="10"><div class="pinWrapper"><div class="pinHolder"><a href="/abc" class="pinImageWrapper"><img src="images/video/10.jpg" class="pinImage"></a></div></div></div>
+			<div class="item" data-number="11"><div class="pinWrapper"><div class="pinHolder"><a href="/abc" class="pinImageWrapper"><img src="images/video/11.jpg" class="pinImage"></a></div></div></div>
+			<div class="item" data-number="12"><div class="pinWrapper"><div class="pinHolder"><a href="/abc" class="pinImageWrapper"><img src="images/video/12.jpg" class="pinImage"></a></div></div></div>
+			<div class="item" data-number="13"><div class="pinWrapper"><div class="pinHolder"><a href="/abc" class="pinImageWrapper"><img src="images/video/13.jpg" class="pinImage"></a></div></div></div>
+			<div class="item" data-number="14"><div class="pinWrapper"><div class="pinHolder"><a href="/abc" class="pinImageWrapper"><img src="images/video/14.jpg" class="pinImage"></a></div></div></div>
+			<div class="item" data-number="15"><div class="pinWrapper"><div class="pinHolder"><a href="/abc" class="pinImageWrapper"><img src="images/video/15.jpg" class="pinImage"></a></div></div></div>
+			<div class="item" data-number="16"><div class="pinWrapper"><div class="pinHolder"><a href="/abc" class="pinImageWrapper"><img src="images/video/16.jpg" class="pinImage"></a></div></div></div>
+			<div class="item" data-number="17"><div class="pinWrapper"><div class="pinHolder"><a href="/abc" class="pinImageWrapper"><img src="images/video/17.jpg" class="pinImage"></a></div></div></div>
+			<div class="item" data-number="18"><div class="pinWrapper"><div class="pinHolder"><a href="/abc" class="pinImageWrapper"><img src="images/video/18.jpg" class="pinImage"></a></div></div></div>
+			<div class="item" data-number="19"><div class="pinWrapper"><div class="pinHolder"><a href="/abc" class="pinImageWrapper"><img src="images/video/19.jpg" class="pinImage"></a></div></div></div>
+			<div class="item" data-number="20"><div class="pinWrapper"><div class="pinHolder"><a href="/abc" class="pinImageWrapper"><img src="images/video/20.jpg" class="pinImage"></a></div></div></div>
+			
+		</div>
+	</div>
+
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="masonry.min.js"></script>	
+<script>
+function setMenuLine(){
+	var nl = $(".nav .phover").offset().left;
+	$("#menuline").css({"left":nl});
+}
+
+$('.nav li').mouseover(
+	function(){
+		$('.phover').removeClass('phover');
+		$(this).addClass('phover');
+		setMenuLine();
+	}
+)
+$('.nav li').mouseout(
+	function(){
+		$(this).removeClass('phover');
+	}
+)
+$('.nav li').click(
+	function(){
+		window.location.href =$(this).attr("href");
+	}
+)
+
+var container;
+var msnry;
+
+function getItemElement(number) {
+  	var item = $("<div/>").addClass("item")
+	item.attr("data-number", number)
+	var pin = $("<div/>").addClass("pinWrapper")
+	var holder = $("<div/>").addClass("pinHolder")
+	
+	holder.append('<a href="/abc" class="pinImageWrapper"><img src="images/video/'+number+'.jpg" class="pinImage"></a>')
+	pin.append(holder)
+	item.append(pin)
+	
+  return item;
+}
+
+$(window).load(function() {
+  container = document.querySelector('.container');
+  msnry = new Masonry( container, {
+    columnWidth: 60,
+	gutter: 3
+  });
+});
+
+var active = true;
+$(window).scroll(function(event){
+	
+  if(!active){return;}
+  event.preventDefault();
+  
+  if($(window).scrollTop() + 100 > $(document).height() - $(window).height() ){
+	
+	active = false;
+	var items = []
+	var fragment = document.createDocumentFragment();
+	
+	var start = parseInt($('.item').last().attr('data-number'))+1;
+	if(start>86) {
+		return;
+	}
+	for(i=start;i<=start+10;i++){
+		var item = getItemElement(i)[0];
+		items.push(item)
+		fragment.appendChild(item);
+	}
+	container.appendChild( fragment );
+	setTimeout(function() {
+		msnry.appended(items);
+		active = true;
+	}, 1000);
+	
+  }
+});
+</script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+.container {
+	margin: 0px auto;
+	width: 72%;	
+}
+
+.item {
+  width:  236px;
+  float: left;
+  border: 0px solid;
+  margin: 20px 0px 10px 0px;
+  
+}
+
+.item a {
+	float: left;
+}
+
+.pinWrapper {
+	box-shadow: 0px 2px 7px 1px rgba(0,0,0,0.33);
+	-webkit-border-radius: 3px 3px 0 0;
+	border-radius: 3px;
+}
+
+.pinImage {
+	-webkit-border-radius: 3px 3px 0 0;
+	border-radius: 3px;
+	width: 236px;
+/*	z-index: -1;*/
+}
+
+.pinDes {
+	height: 30px;
+}
