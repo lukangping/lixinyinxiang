@@ -96,7 +96,7 @@ body {
 	background-repeat: no-repeat no-repeat;
 	width: 100%;
 	overflow: hidden;
-	min-height: 623px;
+	min-height: 700px;
 	background-size: 110% 140%;
 }
 
@@ -107,7 +107,7 @@ body {
 	background-repeat: no-repeat no-repeat;
 	width: 100%;
 	overflow: hidden;
-	min-height: 623px;
+	min-height: 700px;
 	background-size: 35% 73%;
 }
 
@@ -158,13 +158,13 @@ body {
 
 
 #content {
-	background-image: url(images/pin_background.jpg);
+	background-image: url(images/page_background.jpg);
 	opacity: 1;
 	background-position: 50% 0%;
 	background-repeat: no-repeat no-repeat;
 	width: 100%;
 	overflow: hidden;
-	min-height: 623px;
+	min-height: 700px;
 	background-size: 100% 100%;
 }
 
@@ -175,7 +175,7 @@ body {
 	background-repeat: no-repeat no-repeat;
 	width: 100%;
 	overflow: hidden;
-	height: 623px;
+	height: 700px;
 }
 
 #footer {
