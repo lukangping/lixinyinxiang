@@ -45,7 +45,7 @@ body {
 
 #logo img {
 	margin: 20px -216px;
-	max-width: 440px;
+	max-width: 460px;
 }
 
 .nav {
@@ -181,14 +181,15 @@ body {
 }
 
 #footer {
-	padding: 20px 0px 0px 350px;
-	background: #eaeaea;
+	overflow: visible;
 	height: 100px;
+	width: 842px;
+	margin: 22px auto 0px;
 	font-family: Verdana, Geneva, sans-serif;
-	color: rgb(165, 162, 162);;
-	font-size:13px;
-	line-height:12px;
-	font-weight:normal;
+	color: rgb(165, 162, 162);
+	font-size: 13px;
+	line-height: 12px;
+	font-weight: normal;
 }
 
 #footer img {
@@ -198,9 +199,10 @@ body {
 }
 
 #coolVideo {
-	position: absolute;
-	top:373px;
-	left:900px;
+	position: relative;
+	float: left;
+	top: -352px;
+	left: 550px;
 	z-index:1000;
 }
 
