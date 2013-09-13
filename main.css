@@ -7,9 +7,9 @@ body {
 
 #header {
 	height: 110px;
-	width: 100%;
+	width: 900px;
 	margin: 0 auto;
-	position: absolute;
+	position: relative;
 	top: 20px;
 	z-index: 101;
 }
@@ -43,13 +43,13 @@ body {
 	background-repeat: no-repeat;
 	background-position: -220px 17px;
 	float: left;
-	margin: 0 50px 0 220px;
+	margin: 0 50px 0 0px;
 }
 
 .nav {
 	height: 100%;
-	float: right;
-	margin: 0px 250px 0 50px;
+	float: left;
+	margin: 0px auto 0 30px;
 	padding: 0px;
 	font-size: 16px;
 	text-transform: uppercase;
